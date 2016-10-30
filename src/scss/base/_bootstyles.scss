@@ -114,16 +114,19 @@ h3{
 img{
 	max-width: 100%;
 }
-#lead1{
+.lead1{
 	font-size: $font-size__h5;
 	font-weight: $font-weight--bold;
 	color: $ivory;
-	&:hover{
+		&:hover{
 		color: lighten($limeGreen, 5%);
 	}
 }
+.lead1 > a{
+	text-decoration: none;
+}
 
-#lead2{
+.lead2{
 	font-size: $font-size__h5;
 	font-weight: $font-weight--bold;
 	color: $ivory;
