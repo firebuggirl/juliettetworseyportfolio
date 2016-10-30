@@ -1,0 +1,99 @@
+.accordion {
+    font-family: $stack-garamond;
+    margin:0 auto;
+    font-size:24px;
+    border:1px solid #542437;
+    border-radius:10px;
+  /*  width:600px;*/
+    width: 80vw;
+    // padding:10px;
+    background: $charcoal;
+}
+.accordion ul {
+    list-style:none;
+    margin:0;
+
+    padding:0;
+}
+.accordion li {
+    margin:0;
+    padding:0;
+
+}
+.accordion [type=radio], .accordion [type=checkbox] {
+    display:none;
+}
+.accordion label {
+    display:block;
+    font-size:16px;
+    line-height:16px;
+    // background: darken($red, 20%);
+    border:1px solid #542437;
+    color: $sand;
+    text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+    font-weight:700;
+    cursor:pointer;
+    text-transform:uppercase;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+}
+.accordion ul li label:hover, .accordion [type=radio]:checked ~ label, .accordion [type=checkbox]:checked ~ label {
+    background: $cabernet-red;
+    color: $ivory;
+    text-shadow:1px 1px 1px rgba(0,0,0,0.5)
+}
+.accordion .content {
+     padding:1px0 10px;
+    overflow:hidden;
+    border:1px solid $mustard; /* Make the border match the background so it fades in nicely */
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+}
+// .accordion .mobileView {
+//     color:#333;
+//      margin:0px 0 20px 0;
+// }
+
+
+.accordion h3 {
+    color:#542437;
+    padding:0;
+    margin:10px 0;
+}
+
+
+
+/* Vertical */
+.vertical ul li {
+    overflow:hidden;
+    margin:0 0 1px;
+
+}
+.vertical ul li label {
+    padding:10px;
+}
+.vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
+    border-bottom:0;
+
+}
+.vertical ul li label:hover {
+    border:1px solid #542437;
+}
+
+/*hide content before labels clicked*/
+.vertical ul li .content {
+ height: 0px;
+ border-top:0;
+
+}
+
+
+.vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
+    height:200px;
+    border:1px solid #542437;
+    padding-top: 30px;
+      @include bp(tablet_small){
+        height: 400px;
+      }
+
+}

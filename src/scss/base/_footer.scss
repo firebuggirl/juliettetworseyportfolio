@@ -1,0 +1,103 @@
+.pEl{
+  margin-top: 30px;
+  line-height: $line-height;
+  font-size: 20px;
+  font-family: $stack-abolition;
+}
+
+.pClose{
+  margin-left: 70px;
+  font-size: $font-size__h2 ;
+  color: $ivory;
+  @include bp(tablet){
+    margin-top: -5px;
+  }
+}
+
+
+/*Footer*/
+
+footer {
+  @include flex;
+  @include flex_justify_center;
+  @include flex_align_center;
+  margin: 60px auto;
+  /*float: left;*/
+ //  @include flex;
+ // @include flex_justify_center;
+ //  width: 100%;
+  @include bp(tablet){
+  margin-top: 70px;
+  margin-bottom: 70px;
+
+}
+
+}
+
+ul li{
+  list-style-type: none;
+}
+.social{
+   @include flex;
+   @include flex_justify_center;
+   @include flex_align_center;
+   margin-right: 9%;
+   @include bp(tablet){
+     margin-right: 5%;
+   }
+   @include bp(fullscreen){
+     margin-right: 4%;
+   }
+
+}
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 30px;
+  height: 30px;
+  // background-size: 40px 40px;
+  opacity: .7;
+  transition: all .5s;
+
+}
+
+
+a.social:hover {
+  opacity: 1;
+
+}
+
+a.twitter{
+
+   background-image: url(../img/twitter.svg) ;
+
+
+}
+a.youtube{
+ background-image:  url(../img/youtube3.svg);
+}
+a.facebook {
+  background-image: url(../img/facebook-square.svg) ;
+
+
+}
+a.linkedIn{
+  background-image: url(../img/linkedin.svg);
+
+}
+
+a.github{
+    background-image: url(../img/github.svg);
+}
+/*a.spotify{
+  background-image: url(../img/spotify-32copy.png);
+
+
+}*/
+
+a.soundcloud{
+  background-image: url(../img/soundcloud.svg);
+}
+.copyright{
+  text-align: center;
+}
