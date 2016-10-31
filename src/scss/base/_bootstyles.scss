@@ -22,17 +22,7 @@ body {
 // 	}
 // }
 
-svgText, #svgText2, #svgText3{
-	// margin-right: -50px;
-	font-size: 18px;
-//	margin-right: 10px;
-	@include bp(tablet_small){
 
-	}
-	// @include bp(fullscreen){
-	// 	margin-right: -30px;
-	// }
-}
 .jumbotron h1{
   color: $ivory;
 	// font-family: 'Amatic SC', cursive;
@@ -68,16 +58,37 @@ svgText, #svgText2, #svgText3{
   stroke-dasharray: 200;
   animation: dash 15s linear;
 	font-family: 'Amatic SC', cursive;
-	font-size  : 55px;
+	 font-size  : 60px;
 	stroke     : #f1f2d9;
 	stroke-width: 1.5;
 	stroke-dasharray: 20;
 	fill: #f1f2d9;
+
 	@include bp(tablet){
 		font-size: 70px;
 	}
 }
 
+svgText, #svgText2, #svgText3{
+	// padding-right: 20px;
+		// font-size  : 55px;
+// margin: 0 auto;
+	// margin-right: -50px;
+//	font-size: 18px;
+//	margin-right: 10px;
+@include bp(mobile_xLarge){
+	// width: 90%;
+		// font-size  : 75px;
+
+}
+
+	@include bp(tablet_small){
+
+	}
+	// @include bp(fullscreen){
+	// 	margin-right: -30px;
+	// }
+}
 @keyframes dash {
   to {
     stroke-dashoffset: 1000;
@@ -122,9 +133,7 @@ img{
 		color: lighten($limeGreen, 5%);
 	}
 }
-.lead1 > a{
-	text-decoration: none;
-}
+
 
 .lead2{
 	font-size: $font-size__h5;

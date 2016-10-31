@@ -5870,6 +5870,9 @@ body {
     .path {
       font-size: 70px; } }
 
+svgText, #svgText2, #svgText3 {
+  padding-right: 20px; }
+
 @keyframes dash {
   to {
     stroke-dashoffset: 1000; } }
