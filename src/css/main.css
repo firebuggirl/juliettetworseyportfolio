@@ -6272,8 +6272,8 @@ $colHover       : #ffe6d1; /*/
 
 #map, #pano {
   float: left;
-  height: 250px;
-  width: 50%; }
+  height: 400px;
+  width: 100%; }
 
 .map-container {
   position: relative;
@@ -6852,6 +6852,40 @@ a.sc-player:hover,
   @media (min-width: 600px) {
     .vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
       height: 400px; } }
+
+#map {
+  float: left;
+  height: 500px;
+  width: 100%; }
+
+.map-container {
+  position: relative;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  overflow: hidden; }
+
+#nolaSvg {
+  height: 50px;
+  fill: #cc0a0a; }
+
+#nolaText {
+  font-size: 20px;
+  margin-top: 25px;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; }
+
+#menu {
+  display: flex;
+  -moz-display: flex;
+  align-self: center;
+  -moz-align-self: center;
+  position: absolute;
+  background: #231800;
+  width: 60%;
+  color: #F8FBF5;
+  font-family: 'Open Sans', sans-serif; }
+  @media (min-width: 600px) {
+    #menu {
+      width: 25%; } }
 
 /*@import "media";*/
 /*@import "footer";*/
