@@ -510,22 +510,8 @@ $green: $mustard;
 $animation-time: 0.5s;
 $slide:all, $animation-time, cubic-bezier(0.55,0,0.1,1);
 $slide-delay: all, $animation-time $animation-time, cubic-bezier(0.55,0,0.1,1);
-// .img-thumbnail{
-// 	background-color: #710f0f;
-// }
-// .media{
-// 	transition: all 1s;
-// outline: 2px dotted  #9C0E1E;
-// box-shadow: 0 0 0 2px #E4E981;
-// background-color: darken( $red, 20%);
-//
-//
-// &:hover{
-// 	outline: 8px dashed $mustard;
-//  box-shadow: 0 0 0 8px #9C0E1E;
-// }
-//}
-//
+
+
 
 .media__body {
 
@@ -590,7 +576,8 @@ $slide-delay: all, $animation-time $animation-time, cubic-bezier(0.55,0,0.1,1);
 
 				  &:hover {
 				    color: $mustard;
-
+            cursor: pointer;
+            cursor: hand;
 			    &:before {
 			      width: 100%;
 			      transition: $slide;

@@ -36,6 +36,11 @@
     text-transform:uppercase;
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
+    @include bp(fullscreen){
+      line-height: 50px;
+      font-size: $font-size__h5;
+      text-align: center;
+    }
 }
 .accordion ul li label:hover, .accordion [type=radio]:checked ~ label, .accordion [type=checkbox]:checked ~ label {
     background: $cabernet-red;
@@ -87,13 +92,18 @@
 
 }
 
-
+// contains thumbnail images
 .vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
     height:200px;
-    border:1px solid #542437;
-    padding-top: 30px;
+    border:2px solid darken($red, 20%);
+    background-color: darken($mustard, 20%);
+    padding-top: 15px;
       @include bp(tablet_small){
         height: 400px;
       }
-
+   @include bp(fullscreen){
+     text-align: center;
+    //  margin-bottom: 40px;
+    padding-bottom: 400px;
+   }
 }

@@ -166,7 +166,8 @@ a.sc-player:hover,
   content: '';
   display: block;
   background: #bf3d3f;
-  background: rgba(19, 19, 19, 0.12);
+  background: lighten($charcoal, 30%);
+  border: 4px solid darken($red, 20%);
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -182,7 +183,7 @@ a.sc-player:hover,
   }
 }
 .sc-player .sc-controls a:hover {
-  background: #9c3538;
+  background: lighten($charcoal, 20%);;
   background: rgba(19, 19, 19, 0.22);
 }
 .sc-player .sc-controls a:after {
@@ -194,7 +195,7 @@ a.sc-player:hover,
   left: 50%;
   margin-left: -50px;
   z-index: 1;
-  background: url('http://nicholaspetersen.is/wp-content/themes/v3/images/play.png');
+  background: url('../img/play.png');
   background-position: top;
   background-size: 100px auto;
   border-radius: 50%;
@@ -213,6 +214,13 @@ a.sc-player:hover,
 .sc-player .sc-controls a.sc-pause:after {
   background-position: bottom;
 }
+
+.sc-controls p{
+  font-size: 60px;
+  text-align: center;
+  // background-color: $red;
+}
+
 .sc-scrubber .sc-time-indicators {
   background: #9c3538;
   background: rgba(19, 19, 19, 0.22);

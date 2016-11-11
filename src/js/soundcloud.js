@@ -629,6 +629,30 @@
     return false;
   });
 
+  $(document).on('click','a.sc-play', function(event) {
+    var pauseP = document.createElement( 'p' );
+
+    var pauseIcon = document.createTextNode( "||" );
+    var play = document.querySelector( 'a.sc-play' );
+    var scInfo = document.querySelector( '.sc-controls' );
+
+
+    pauseP.appendChild( pauseIcon ) ;
+    scInfo.appendChild( pauseP );
+
+    pauseP.addEventListener('click', function(){
+        // window.location.reload();
+        // event.stopPropagation();
+         pauseP.style.display = "none";
+        $.scPlayer.stopAll = function() {
+          $('.sc-player.playing a.sc-pause').click();
+        };
+          $.scPlayer.stopAll();
+
+    })
+
+  });
+
   // displaying the info panel in the player
   $(document).on('click','a.sc-info-toggle, a.sc-info-close', function(event) {
     var $link = $(this);

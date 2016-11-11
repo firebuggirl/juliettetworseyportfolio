@@ -6133,6 +6133,8 @@ $colHover       : #ffe6d1; /*/
     transition: all, 0.5s, cubic-bezier(0.55, 0, 0.1, 1); }
   .media__body:hover {
     color: #FCAD0D;
+    cursor: pointer;
+    cursor: hand;
     -webkit-box-shadow: inset 0px 0px 0px 2px #fbe3ab;
     -moz-box-shadow: inset 0px 0px 0px 2px #fbe3ab;
     box-shadow: inset 0px 0px 0px 2px10px #fbe3ab;
@@ -6440,7 +6442,8 @@ a.sc-player:hover,
   content: '';
   display: block;
   background: #bf3d3f;
-  background: rgba(19, 19, 19, 0.12);
+  background: #797381;
+  border: 4px solid #6b0505;
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -6455,7 +6458,7 @@ a.sc-player:hover,
     height: 220px; } }
 
 .sc-player .sc-controls a:hover {
-  background: #9c3538;
+  background: #5f5b66;
   background: rgba(19, 19, 19, 0.22); }
 
 .sc-player .sc-controls a:after {
@@ -6467,7 +6470,7 @@ a.sc-player:hover,
   left: 50%;
   margin-left: -50px;
   z-index: 1;
-  background: url("http://nicholaspetersen.is/wp-content/themes/v3/images/play.png");
+  background: url("../img/play.png");
   background-position: top;
   background-size: 100px auto;
   border-radius: 50%;
@@ -6484,6 +6487,10 @@ a.sc-player:hover,
 
 .sc-player .sc-controls a.sc-pause:after {
   background-position: bottom; }
+
+.sc-controls p {
+  font-size: 60px;
+  text-align: center; }
 
 .sc-scrubber .sc-time-indicators {
   background: #9c3538;
@@ -6807,6 +6814,11 @@ a.sc-player:hover,
   text-transform: uppercase;
   -webkit-transition: all .2s ease-out;
   -moz-transition: all .2s ease-out; }
+  @media (min-width: 1024px) {
+    .accordion label {
+      line-height: 50px;
+      font-size: 22px;
+      text-align: center; } }
 
 .accordion ul li label:hover, .accordion [type=radio]:checked ~ label, .accordion [type=checkbox]:checked ~ label {
   background: #940202;
@@ -6847,11 +6859,16 @@ a.sc-player:hover,
 
 .vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
   height: 200px;
-  border: 1px solid #542437;
-  padding-top: 30px; }
+  border: 2px solid #6b0505;
+  background-color: #a16c02;
+  padding-top: 15px; }
   @media (min-width: 600px) {
     .vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
       height: 400px; } }
+  @media (min-width: 1024px) {
+    .vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
+      text-align: center;
+      padding-bottom: 400px; } }
 
 #map {
   float: left;

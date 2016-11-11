@@ -6,6 +6,7 @@ var gulp = require('gulp'),
 
 gulp.task("concatScripts", function() {
    return gulp.src([
+      'js/data.js',
       'js/modernizr.js',
       'js/jquery-1.11.2.min.js',
       'js/jquery-2.2.0.min.js',
