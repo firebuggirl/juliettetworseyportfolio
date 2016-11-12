@@ -593,32 +593,7 @@ if(window.resize){
 //
 // });
 
-////////////////////////////////
-////Test function for pulling in JSON by array individual array index
-/////////////////////////////////
 
-
- var myArr2 = JSON.parse( jsonData );
-
-  myFunction(myArr2);
-
-
-  function myFunction(arr2) {
-    var out = "";
-      var i;
-
-
-           out += '<p>' + arr2[1].text + '</p>' + '<br>';
-
-          // var content = document.querySelectorAll('modal-body');
-
-
-   var showJSON2 = function()  {
-    //  document.getElementById("jsontest2").innerHTML = out;
-       document.getElementById("jsontest2").innerHTML = out;
-   }
-   showJSON2();
-  }
 
 
 
