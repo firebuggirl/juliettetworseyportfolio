@@ -750,14 +750,18 @@ $slide-delay: all, $animation-time $animation-time, cubic-bezier(0.55,0,0.1,1);
 	text-align: center;
 @include flex;
 @include flex_column;
-
+@media only screen and (min-width: 768px){
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 	/*margin: 10px ;*/
-  @include bp(tablet){
-	@include flex_row;
-  @include flex_wrap;
- @include flex_justify_center;
-
-  }
+ //  @include bp(tablet){
+ // @include flex_row;
+ //  @include flex_wrap;
+ // @include flex_justify_center;
+ //
+ //  }
 }
 
 

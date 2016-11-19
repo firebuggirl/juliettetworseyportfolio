@@ -6249,14 +6249,11 @@ $colHover       : #ffe6d1; /*/
   flex-direction: column;
   -webkit-flex-direction: column;
   /*margin: 10px ;*/ }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     #albums {
       flex-direction: row;
-      -webkit-flex-direction: row;
       flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-      justify-content: center;
-      -webkit-justify-content: center; } }
+      justify-content: center; } }
 
 #albums img {
   -webkit-transition: -webkit-transform 0.15s ease 0s;
