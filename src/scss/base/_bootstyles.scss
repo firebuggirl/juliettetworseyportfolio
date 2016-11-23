@@ -1,7 +1,12 @@
 
 /* Layout
 ================================ */
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
 
+}
 body {
 	padding-top: 50px;
   background-color: $charcoal;

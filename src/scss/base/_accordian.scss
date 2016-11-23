@@ -75,7 +75,7 @@
 
 /* Vertical */
 .vertical ul li {
-    // overflow:hidden;
+     overflow:hidden;
     margin:0 0 1px;
 
 
@@ -85,13 +85,7 @@
      padding:20px;
 
 }
-// .vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
-//     border-bottom:0;
-//
-// }
-// .vertical ul li label:hover {
-//     border:1px solid #542437;
-// }
+
 
 /*hide content before labels clicked*/
 .vertical ul li .content {
@@ -106,7 +100,7 @@
     height: 210px;
     border:2px solid darken($red, 20%);
     background-color: darken($mustard, 20%);
-    padding-top: 15px;
+    padding-top: 40px;
       @include bp(tablet_small){
         height: 400px;
       }

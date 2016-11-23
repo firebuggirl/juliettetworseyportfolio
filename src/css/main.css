@@ -6009,6 +6009,11 @@ th.visible-print, td.visible-print {
 
 /* Layout
 ================================ */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
 body {
   padding-top: 50px;
   background-color: #2d2b30;
@@ -7014,6 +7019,7 @@ li {
 
 /* Vertical */
 .vertical ul li {
+  overflow: hidden;
   margin: 0 0 1px; }
 
 .vertical ul li label {
@@ -7028,7 +7034,7 @@ li {
   height: 210px;
   border: 2px solid #6b0505;
   background-color: #a16c02;
-  padding-top: 15px; }
+  padding-top: 40px; }
   @media (min-width: 600px) {
     .vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
       height: 400px; } }
