@@ -1,8 +1,9 @@
 
 
-     /**
- * Main JSON object of posts, pages and settings
+ /**
+ * JSON array of objects to be appended to DOM/modals on details button click
  */
+
 var posts = [
       {
         "id":1,

@@ -15,8 +15,8 @@ gulp.task("concatScripts", function() {
       'js/spotify.js',
       'js/lightbox.js',
       'js/soundcloud.js',
-      'js/googlemaps.js',
-      'js/imghover.js'
+      'js/googlemaps.js'
+
 
    ])
     .pipe(concat("app.js"))

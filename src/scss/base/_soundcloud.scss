@@ -65,7 +65,7 @@ a.sc-player:hover,
 .button:hover {
   background: #9c3538;
   background: rgba(19, 19, 19, 0.24);
-  color: #f8f8f83
+  color: #f8f8f8;
 }
 .main {
   margin-bottom: 4em;
@@ -120,7 +120,7 @@ a.sc-player:hover,
 .sc-player {
   position: relative;
   margin-bottom: 2em;
-  *zoom: 1;
+  // *zoom: 1;
 }
 .sc-player a {
   text-decoration: none;

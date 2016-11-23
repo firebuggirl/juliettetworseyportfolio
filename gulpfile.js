@@ -31,8 +31,7 @@ gulp.task("concatScripts", function() {
       'js/gallery.js',
       'js/modal.js',
       'js/spotify.js',
-      'js/googlemaps.js',
-      'js/imghover.js'])
+      'js/googlemaps.js'])
       .pipe(maps.init())
       .pipe(concat('src/app.js'))
       .pipe(maps.write('./'))
