@@ -78,10 +78,11 @@ body {
 	stroke-width: 1.5;
 	stroke-dasharray: 20;
 	fill: #f1f2d9;
-  @include bp(tablet){
+	@include bp(tablet){
 		font-size: 70px;
 	}
 }
+
 
 svgText, #svgText2, #svgText3{
 	// padding-right: 20px;
